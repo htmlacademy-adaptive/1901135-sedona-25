@@ -53,38 +53,38 @@
           <fieldset class="feedback-form__name form-name">
             <legend class="form-name__title">Представьтесь:</legend>
             <label class="form-name__label-name" for="feedback-name">Имя*:</label>
-            <input class="form-name__form-input" type="text" id="feedback-name" name="feedback-name" placeholder="Петр"
+            <input class="form-name__form-input" type="text" id="feedback-name" name="name" placeholder="Петр"
               required>
             <label class="form-name__label-surname" for="feedback-surname">Фамилия*:</label>
-            <input class="form-name__form-input" type="text" id="feedback-surname" name="feedback-surname"
+            <input class="form-name__form-input" type="text" id="feedback-surname" name="surname"
               placeholder="Иванов" required>
             <label class="form-name__label-patronymic" for="feedback-patronymic">Отчество:</label>
-            <input class="form-name__form-input" type="text" id="feedback-patronymic" name="feedback-patronymic"
+            <input class="form-name__form-input" type="text" id="feedback-patronymic" name="patronymic"
               placeholder="Петрович">
           </fieldset>
           <fieldset class="feedback-form__contacts form-contacts">
             <legend class="form-contacts__title">Контактная информация:</legend>
             <label class="form-contacts__label-phone" for="feedback-phone">Контактный телефон*:</label>
-            <input class="form-contacts__form-input" type="text" id="feedback-phone" name="feedback-phone"
+            <input class="form-contacts__form-input" type="tel" id="feedback-phone" name="phone"
               placeholder="Введите телефон" required>
             <label class="form-contacts__label-email" for="feedback-email">Электронная почта*:</label>
-            <input class="form-contacts__form-input" type="text" id="feedback-email" name="feedback-email"
+            <input class="form-contacts__form-input" type="email" id="feedback-email" name="email"
               placeholder="Введите e-mail" required>
           </fieldset>
           <fieldset class="feedback-form_estimation form-estimation">
             <legend class="form-estimation_title">Ваше общее впечатление:</legend>
             <label class="form-estimation__control-radio">
-              <input class="visually-hidden" type="radio" value="positive" checked>
+              <input class="visually-hidden" name="estimation" type="radio" value="positive" checked>
               <span class="form-estimation__radio-style"></span>
               Скорее положительное
             </label>
             <label class="form-estimation__control-radio">
-              <input class="visually-hidden" type="radio" value="negative">
+              <input class="visually-hidden" name="estimation" type="radio" value="negative">
               <span class="form-estimation__radio-style"></span>
               Скорее отрицательное
             </label>
             <label class="form-estimation__control-radio">
-              <input class="visually-hidden" type="radio" value="difficult to answer">
+              <input class="visually-hidden" name="estimation" type="radio" value="difficult to answer">
               <span class="form-estimation__radio-style"></span>
               Затрудняюсь ответить
             </label>
@@ -92,22 +92,22 @@
           <fieldset class="feedback-form_estimation form-places">
             <legend class="form-places_title">Посещенные достопримечательности:</legend>
             <label class="form-places__control-checkbox">
-              <input class="visually-hidden" type="checkbox" value="devil's bridge" checked>
+              <input class="visually-hidden" name="devils bridge" type="checkbox" value="devils bridge" checked>
               <span class="form-places__checkbox-style"></span>
               Мост Дьявола
             </label>
             <label class="form-places__control-checkbox">
-              <input class="visually-hidden" type="checkbox" value="mount bell" checked>
+              <input class="visually-hidden" name="mount bell" type="checkbox" value="mount bell" checked>
               <span class="form-places__checkbox-style"></span>
               Гора-Колокол
             </label>
             <label class="form-places__control-checkbox">
-              <input class="visually-hidden" type="checkbox" value="slide park" checked>
+              <input class="visually-hidden" name="slide park" type="checkbox" value="slide park" checked>
               <span class="form-places__checkbox-style"></span>
               Слайд-парк
             </label>
             <label class="form-places__control-checkbox">
-              <input class="visually-hidden" type="checkbox" value="red rocks">
+              <input class="visually-hidden" name="red rocks" type="checkbox" value="red rocks">
               <span class="form-places__checkbox-style"></span>
               Красные скалы
             </label>
