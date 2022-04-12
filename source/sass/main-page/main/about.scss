@@ -1,0 +1,18 @@
+.about {
+  font-family: 'PT Sans';
+
+  &__title {
+    @extend %mobile-title;
+    margin: 32px 0 35px 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    @extend %mobile-subtitle;
+    margin: 0 0 32px 0;
+    color: #333333;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}

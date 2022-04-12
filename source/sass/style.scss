@@ -1,1 +1,48 @@
-// Начните писать стили здесь
+@import "technical.scss";
+@import "variables.scss";
+/*---------------Header-----------------*/
+@import "main-page/header/header.scss";
+@import "main-page/header/navigation.scss";
+@import "main-page/header/burger-button.scss";
+@import "main-page/header/navigation-menu.scss";
+/*-------------------Main----------------*/
+@import "main-page/main/main-page.scss";
+@import "main-page/main/about.scss";
+@import "main-page/main/description.scss";
+@import "main-page/main/advantages-city-list.scss";
+@import "main-page/main/advantages-image.scss";
+@import "main-page/main/advantages-nature.scss";
+@import "main-page/main/advantages-area.scss";
+@import "main-page/main/advantages-road.scss";
+@import "main-page/main/advantages-tourists.scss";
+@import "main-page/main/advantages-list.scss";
+@import "main-page/main/find-hotel.scss";
+@import "main-page/main/main-header.scss";
+@import "main-page/main/map.scss";
+@import "main-page/main/main-button.scss";
+/*-------------------Footer----------------*/
+@import "main-page/footer/footer.scss";
+@import "main-page/footer/developers.scss";
+@import "main-page/footer/hash-tag.scss";
+@import "main-page/footer/social-facebook.scss";
+@import "main-page/footer/social-twitter.scss";
+@import "main-page/footer/social-youtube.scss";
+@import "main-page/footer/social-list.scss";
+/*-*/
+/*-----------------------Catalog main------------------*/
+@import "catalog-page/main-catalog.scss";
+@import "catalog-page/catalog-top.scss";
+@import "catalog-page/catalog-header.scss";
+@import "catalog-page/catalog-photos.scss";
+@import "catalog-page/photos-image.scss";
+@import "catalog-page/catalog-video.scss";
+/*-*/
+/*-----------------------Form main------------------*/
+@import "form-page/form-header.scss";
+@import "form-page/form-top.scss";
+@import "form-page/feedback-form.scss";
+@import "form-page/form-contacts.scss";
+@import "form-page/form-emotions.scss";
+@import "form-page/form-estimation.scss";
+@import "form-page/form-name.scss";
+@import "form-page/form-places.scss";

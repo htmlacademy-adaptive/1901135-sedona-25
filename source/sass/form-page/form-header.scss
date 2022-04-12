@@ -1,0 +1,16 @@
+.form-header {
+  font-family: 'PT Sans';
+  padding: 33px 0 28px;
+
+  &__title {
+    @extend %mobile-title;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__subtitle {
+    @extend %mobile-subtitle;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}

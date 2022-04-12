@@ -1,0 +1,33 @@
+.advantages-city-list {
+
+  list-style: none;
+  padding: 25px 0 52px;
+  margin: 0;
+
+  &__item {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "icon title"
+      "icon subtitle";
+  }
+
+  &__image {
+    grid-area: icon;
+    margin: 0 auto;
+  }
+
+  &__title {
+    @extend %mobile-title;
+    margin: 7px 0 16px 8px;
+    grid-area: title;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    @extend %mobile-subtitle;
+    margin: 0 0 30px 8px;
+    grid-area: subtitle;
+    text-transform: uppercase;
+  }
+}

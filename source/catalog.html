@@ -3,6 +3,10 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:regular,italic,700,700italic" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css">
   <title>Document</title>
 </head>
 
@@ -13,89 +17,84 @@
         <img class="logo__image" src="./img/main-page/logotype-mobile.svg" alt="Логотип." width="102" height="84">
       </a>
       <nav class="header__navigation navigation">
-        <div class="navigation__container">
           <button class="navigation__burger-button burger-button" type="button">
             <span class="burger-button__line">
               <span class="visually-hidden">Кнопка меню.</span>
             </span>
           </button>
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a class="navigation__link navigation__link--current" href="index.html">Главная</a>
+          <ul class="navigation__list navigation-menu">
+            <li class="navigation-menu__item">
+              <a class="navigation-menu__link navigation-menu__link--current" href="index.html">Главная</a>
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="catalog.html">Фото и видео</a>
+            <li class="navigation-menu__item">
+              <a class="navigation-menu__link" href="catalog.html">Фото и видео</a>
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="form.html">Форма отзыва</a>
+            <li class="navigation-menu__item">
+              <a class="navigation-menu__link" href="form.html">Форма отзыва</a>
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Html academy</a>
+            <li class="navigation-menu__item">
+              <a class="navigation-menu__link" href="#">Html academy</a>
             </li>
           </ul>
-        </div>
       </nav>
     </header>
 
     <main class="main-catalog">
-      <div class="main-catalog__title">
-        <h1 class="visually-hidden">Седона.</h1>
+      <div class="main-catalog__header catalog-top">
+        <h1 class="visually-hidden">Sedona</h1>
+        <img class="catalog-top__title" src="./img/catalog-page/catalog-title.svg">
       </div>
       <section class="main-catalog__content catalog-content">
         <div class="catalog-content__header catalog-header">
-          <h2 class="catalog-header__title">Фото и видео</h2>
-          <p class="catalog-header__subtitle">Не можете решиться на путешествие из-за курса? Фотографии помогут вам
-            забыть о ролитике и экономике.</p>
+          <div class="container">
+            <h2 class="catalog-header__title">Фото и видео</h2>
+            <p class="catalog-header__subtitle">Не можете решиться на путешествие из-за курса? Фотографии помогут вам
+              забыть о ролитике и экономике.</p>
+          </div>
         </div>
         <ul class="catalog-content__gallery catalog-photos">
-          <li class="catalog-photos__image photos-image">
-            <a class="photos-image__link" href="#">
-            <img class="photos-image__photo" src="./img/catalog-page/photo-1-mobile.jpg" alt="Фото природы.">
-          </a>
-            <div class="photos-image__description">
-              <h3 class="photos-image__title">Неродные просторы</h3>
-              <p class="photos-image__autor">Автор фото: Борис</p>
-              <span class="photos-image__likes">1350</span>
-            </div>
-          </li>
-          <li class="catalog-photos__image photos-image">
-            <a class="photos-image__link" href="#">
-            <img class="photos-image__photo" src="./img/catalog-page/photo-2-mobile.jpg" alt="Фото природы.">
-          </a>
-            <div class="photos-image__description">
-              <h3 class="photos-image__title">Местная растительность</h3>
-              <p class="photos-image__autor">Автор фото: Сергей</p>
-              <span class="photos-image__likes">143</span>
-            </div>
-          </li>
-          <li class="catalog-photos__image photos-image">
-            <a class="photos-image__link" href="#">
-            <img class="photos-image__photo" src="./img/catalog-page/photo-3-mobile.jpg" alt="Фото природы.">
-          </a>
-            <div class="photos-image__description">
-              <h3 class="photos-image__title">Дорога на север</h3>
-              <p class="photos-image__autor">Автор фото: Петр</p>
-              <span class="photos-image__likes">93</span>
-            </div>
-          </li>
-          <li class="catalog-photos__image photos-image">
-            <a class="photos-image__link" href="#">
-            <img class="photos-image__photo" src="./img/catalog-page/photo-4-mobile.jpg" alt="Фото природы.">
-          </a>
-            <div class="photos-image__description">
-              <h3 class="photos-image__title">Мост дьявола</h3>
-              <p class="photos-image__autor">Автор фото: Антон</p>
-              <span class="photos-image__likes">254</span>
-            </div>
-          </li>
-          <li class="catalog-photos__image catalog-video">
-            <h2 class="catalog-video__title">Вы все еще сомневаетесь?</h2>
-            <p class="catalog-video__subtitle">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
-              очередной раз!</p>
-            <video class="catalog-video__video" loop preload="auto">
-              <source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-            </video>
-          </li>
+          <div class="container">
+            <li class="catalog-photos__image photos-image">
+              <img class="photos-image__photo" src="./img/catalog-page/photo-1-mobile.jpg" alt="Фото природы.">
+              <div class="photos-image__description">
+                <h3 class="photos-image__title">Неродные просторы</h3>
+                <p class="photos-image__autor">Автор фото: Борис</p>
+                <span class="photos-image__likes">1350</span>
+              </div>
+            </li>
+            <li class="catalog-photos__image photos-image">
+              <img class="photos-image__photo" src="./img/catalog-page/photo-2-mobile.jpg" alt="Фото природы.">
+              <div class="photos-image__description">
+                <h3 class="photos-image__title">Местная растительность</h3>
+                <p class="photos-image__autor">Автор фото: Сергей</p>
+                <span class="photos-image__likes">143</span>
+              </div>
+            </li>
+            <li class="catalog-photos__image photos-image">
+              <img class="photos-image__photo" src="./img/catalog-page/photo-3-mobile.jpg" alt="Фото природы.">
+              <div class="photos-image__description">
+                <h3 class="photos-image__title">Дорога на север</h3>
+                <p class="photos-image__autor">Автор фото: Петр</p>
+                <span class="photos-image__likes">93</span>
+              </div>
+            </li>
+            <li class="catalog-photos__image photos-image">
+              <img class="photos-image__photo" src="./img/catalog-page/photo-4-mobile.jpg" alt="Фото природы.">
+              <div class="photos-image__description">
+                <h3 class="photos-image__title">Мост дьявола</h3>
+                <p class="photos-image__autor">Автор фото: Антон</p>
+                <span class="photos-image__likes">254</span>
+              </div>
+            </li>
+            <li class="catalog-photos__image catalog-video">
+              <h2 class="catalog-video__title">Вы все еще сомневаетесь?</h2>
+              <p class="catalog-video__subtitle">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
+                очередной раз!</p>
+              <video class="catalog-video__video" loop preload="auto">
+                <source type="#" src="#">
+              </video>
+            </li>
+        </div>
         </ul>
       </section>
     </main>
@@ -132,6 +131,8 @@
       </div>
     </footer>
   </div>
+
+  <script src="./js/app.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,23 @@
+.advantages-area {
+  padding: 26px 0 24px;
+  background-color: #EEEEEE;
+  text-align: center;
+
+  &__title {
+    @extend %mobile-title;
+    margin: 0 0 11px 0;
+    text-transform: uppercase;
+  }
+
+  &__number {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+  }
+
+  &__subtitle {
+    @extend %mobile-subtitle;
+    margin: 17px 0 0 0;
+    text-transform: uppercase;
+  }
+}

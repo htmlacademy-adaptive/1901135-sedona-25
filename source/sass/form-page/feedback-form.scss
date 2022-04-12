@@ -1,0 +1,14 @@
+.form-input {
+  font-family: 'PT Sans';
+  @extend %mobile-title;
+  border: none;
+  background-color: #f2f2f2;
+  padding: 16px;
+  margin: 0 0 16px 0;
+}
+
+.form-label {
+  @extend %mobile-subtitle;
+  text-transform: uppercase;
+  margin: 0 0 0 15px;
+}

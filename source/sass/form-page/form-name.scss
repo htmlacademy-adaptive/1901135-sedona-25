@@ -1,0 +1,14 @@
+.form-name {
+  display: flex;
+  flex-direction: column;
+  font-family: 'PT Sans';
+  border: none;
+  margin: 24px 0 0 0;
+
+  &__title {
+    @extend %mobile-title;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 20px 0;
+  }
+}
