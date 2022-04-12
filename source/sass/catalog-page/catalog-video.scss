@@ -1,0 +1,13 @@
+.catalog-video {
+  &__title {
+    @extend %mobile-title;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__subtitle {
+    @extend %mobile-subtitle;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}

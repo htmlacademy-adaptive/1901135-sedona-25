@@ -1,0 +1,39 @@
+.photos-image {
+
+  font-family: 'PT Sans';
+
+  &__photo {
+    margin: 0 0 15px 0;
+  }
+
+  &__title {
+    @extend %image-title;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  &__autor {
+    @extend %image-autor;
+    margin: 0 0 16px 0;
+  }
+
+  &__likes {
+    display: block;
+    position: relative;
+    padding-left: 36px;
+    @extend %image-title;
+    margin: 0 0 25px 0;
+
+    &::before {
+      display: block;
+      content: '';
+      position: absolute;
+      width: 23px;
+      height: 21px;
+      background: url('../../img/catalog-page/like-icon.svg') no-repeat center;
+      background-size: cover;
+      left: 0;
+      top: -4px;
+    }
+  }
+}

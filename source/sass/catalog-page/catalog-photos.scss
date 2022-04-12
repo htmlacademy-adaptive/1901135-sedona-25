@@ -1,0 +1,14 @@
+.catalog-photos {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &__image {
+    max-width: 100%;
+
+    img {
+      min-width: 100%;
+      object-fit: cover;
+    }
+  }
+}

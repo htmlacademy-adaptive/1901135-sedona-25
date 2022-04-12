@@ -1,0 +1,32 @@
+
+.navigation-menu {
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #678fa8;
+
+  &__item {
+    background-color: #81b3d2;
+    box-shadow: 0 1 0 0 hsla(0, 0%, 100%, 0.2) inset;
+    margin-bottom: 1px;
+  }
+
+  &__item:last-child {
+    background: linear-gradient(180deg, #81b3d2 80%, rgba(177, 177, 177, 0.1) 100%);
+  }
+
+  &__link {
+    display: block;
+    width: 100%;
+    padding: 17px 0 12px;
+    color: #ffffff;
+    font-family: 'PT Sans';
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}

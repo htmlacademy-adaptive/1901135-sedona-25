@@ -1,0 +1,14 @@
+.social-youtube {
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    background-color: #81b3d2;
+  }
+
+  &__icon {
+    height: 20px;
+  }
+}
