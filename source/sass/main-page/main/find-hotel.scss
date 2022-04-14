@@ -2,20 +2,21 @@
   font-family: 'PT Sans';
   text-align: center;
   padding: 39px 0 49px;
-
-  &__title {
-    margin: 0 0 28px 0;
-    font-size: 21px;
-    font-weight: 700;
-    line-height: 26px;
-    text-transform: uppercase;
-  }
-
-  &__subtitle {
-    margin: 0 0 32px 0;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 21px;
-    text-transform: uppercase;
-  }
 }
+
+.find-hotel__title {
+  margin: 0 0 28px 0;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.find-hotel__subtitle {
+  margin: 0 0 32px 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+

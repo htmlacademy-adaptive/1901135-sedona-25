@@ -1,8 +1,14 @@
-.header {
-  &__logo {
-    position: absolute;
-    left: 50%;
-    margin-left: -51px;
+
+.header__logo {
+  position: absolute;
+  left: 50%;
+  margin-left: -51px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .header__logo {
+    z-index: 10;
   }
 }
 

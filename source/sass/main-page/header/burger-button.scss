@@ -30,16 +30,17 @@
     left: 17px;
     transition: all 0.3s ease;
   }
-
-  &__line {
-    display: block;
-    content: '';
-    background-color: #81b3d2;
-    width: 22px;
-    height: 4px;
-    transition: all 0.3s ease;
-  }
 }
+
+.burger-button__line {
+  display: block;
+  content: '';
+  background-color: #81b3d2;
+  width: 22px;
+  height: 4px;
+  transition: all 0.3s ease;
+}
+
 
 .burger-button--activ {
   &::before {
@@ -56,6 +57,21 @@
 
   .burger-button__line {
     opacity: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .burger-button {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
   }
 }
 

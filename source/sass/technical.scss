@@ -11,18 +11,19 @@
   overflow: hidden;
 }
 
-.page {
-  &__body {
-    margin: 0;
-  }
+.page__body {
+  margin: 0;
+  font-family: 'PT Sans';
 }
 
 .wrapper {
-  max-width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   overflow: hidden;
 }
 
 .container {
   min-width: 284px;
-  padding: 0 18px;
+  padding: 0 20px;
+  box-sizing: border-box;
 }

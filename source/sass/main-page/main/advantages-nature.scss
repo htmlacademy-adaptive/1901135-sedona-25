@@ -1,0 +1,8 @@
+@media (min-width: $tablet-width) {
+  .advantages-nature {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 256px;
+    grid-column: 1/4;
+  }
+}

@@ -2,5 +2,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
   padding: 28px 0 33px;
+}
+
+@media (min-width: $tablet-width) {
+  .footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 28px 45px 33px;
+  }
 }

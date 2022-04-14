@@ -1,0 +1,13 @@
+
+@media (min-width: $tablet-width) {
+  .advantages-city {
+    grid-column: 1/4;
+  }
+
+  .advantages-city__container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 256px auto;
+  }
+}
+
