@@ -1,33 +1,66 @@
 .advantages-city-list {
-
   list-style: none;
   padding: 25px 0 52px;
   margin: 0;
+}
 
-  &__item {
-    display: grid;
-    grid-template-columns: 40px 1fr;
-    grid-template-rows: auto auto;
-    grid-template-areas: "icon title"
-      "icon subtitle";
+.advantages-city-list__item {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "icon title"
+    "icon subtitle";
+}
+
+.advantages-city-list__image {
+  grid-area: icon;
+}
+
+.advantages-city-list__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  margin: 7px 0 16px 8px;
+  grid-area: title;
+  text-transform: uppercase;
+}
+
+.advantages-city-list__subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  margin: 0 0 30px 8px;
+  grid-area: subtitle;
+  text-transform: uppercase;
+}
+
+.advantages-city__list-container {
+  min-width: 284px;
+  padding: 0 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages-city__list-container {
+    grid-column: -1/1;
   }
 
-  &__image {
-    grid-area: icon;
-    margin: 0 auto;
+  .advantages-city-list {
+    display: flex;
+    justify-content: space-between;
   }
 
-  &__title {
-    @extend %mobile-title;
-    margin: 7px 0 16px 8px;
-    grid-area: title;
-    text-transform: uppercase;
+  .advantages-city-list__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 35px;
   }
 
-  &__subtitle {
-    @extend %mobile-subtitle;
-    margin: 0 0 30px 8px;
-    grid-area: subtitle;
-    text-transform: uppercase;
+  .advantages-city-list__title {
+    text-align: center;
+  }
+
+  .advantages-city-list__subtitle {
+    text-align: center;
   }
 }

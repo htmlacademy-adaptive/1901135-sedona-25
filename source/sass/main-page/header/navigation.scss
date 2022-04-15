@@ -1,20 +1,29 @@
 .navigation {
   display: flex;
   justify-content: flex-end;
+}
 
-  &__burger-button {
-    z-index: 10;
-  }
+.navigation__burger-button {
+  z-index: 10;
+}
 
-  &__list {
-    position: absolute;
-    width: 100%;
-    z-index: 5;
-    transform: translateY(-110%);
-    transition: all ease 0.3s;
-  }
+.navigation__list {
+  position: absolute;
+  width: 100%;
+  z-index: 5;
+  transform: translateY(-110%);
+  transition: all ease 0.3s;
+}
 
-  &__list--activ {
+.navigation__list--activ {
+  transform: translateY(0);
+}
+
+
+@media (min-width: $tablet-width) {
+  .navigation__list {
+    position: static;
     transform: translateY(0);
+    z-index: 0;
   }
 }

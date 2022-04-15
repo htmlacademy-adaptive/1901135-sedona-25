@@ -4,15 +4,18 @@
   font-family: 'PT Sans';
   border: none;
   margin: 24px 0 0 0;
-
-  &__title {
-    @extend %mobile-title;
-    text-align: center;
-    text-transform: uppercase;
-    margin: 0 0 20px 0;
-  }
-
-  &__text {
-    resize: none;
-  }
 }
+
+.form-emotions__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+}
+
+.form-emotions__text {
+  resize: none;
+}
+

@@ -8,3 +8,9 @@
   background-position: top;
   background-size: cover;
 }
+
+@media (min-width: $tablet-width) {
+  .main-header {
+    background-position: center;
+  }
+}

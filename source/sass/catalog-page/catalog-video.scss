@@ -1,13 +1,20 @@
 .catalog-video {
-  &__title {
-    @extend %mobile-title;
-    text-transform: uppercase;
-    text-align: center;
-  }
 
-  &__subtitle {
-    @extend %mobile-subtitle;
-    text-transform: uppercase;
-    text-align: center;
-  }
 }
+
+.catalog-video__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.catalog-video__subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+}
+

@@ -1,39 +1,96 @@
 .photos-image {
-
   font-family: 'PT Sans';
+}
 
-  &__photo {
-    margin: 0 0 15px 0;
+.photos-image__photo {
+  margin: 0 0 15px 0;
+}
+
+.photos-image__title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.photos-image__autor {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  margin: 0 0 16px 0;
+}
+
+.photos-image__likes {
+  display: block;
+  position: relative;
+  padding-left: 36px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  margin: 0 0 25px 0;
+
+  &::before {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 23px;
+    height: 21px;
+    background: url('../../img/catalog-page/like-icon.svg') no-repeat center;
+    background-size: cover;
+    left: 0;
+    top: -4px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .photos-image__description {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+    padding: 22px 20px 15px 20px;
+    background-color: #f2f2f2;
+    box-sizing: border-box;
   }
 
-  &__title {
-    @extend %image-title;
-    text-transform: uppercase;
+  .photos-image__title {
+    grid-column: 1/1;
+    grid-row: 1/1;
+  }
+
+  .photos-image__autor {
+    grid-column: 1/1;
+    grid-row: 2/2;
     margin: 0;
   }
 
-  &__autor {
-    @extend %image-autor;
-    margin: 0 0 16px 0;
+  .photos-image__likes {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    margin: auto;
+    margin-right: 0;
   }
 
-  &__likes {
-    display: block;
-    position: relative;
-    padding-left: 36px;
-    @extend %image-title;
-    margin: 0 0 25px 0;
+  .photos-image__photo {
+    margin: 0;
+  }
+}
 
-    &::before {
-      display: block;
-      content: '';
-      position: absolute;
-      width: 23px;
-      height: 21px;
-      background: url('../../img/catalog-page/like-icon.svg') no-repeat center;
-      background-size: cover;
-      left: 0;
-      top: -4px;
-    }
+@media (min-width: $desktop-width) {
+  .photos-image {
+    position: relative;
+  }
+
+  .photos-image__description {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .photos-image__likes::before {
+    background: url('../../img/catalog-page/like-icon-desctop.svg') no-repeat center;
   }
 }

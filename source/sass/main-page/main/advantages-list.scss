@@ -1,6 +1,17 @@
 .advantages-list {
-
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages-list {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+
+  .advantages-list__item {
+    min-height: 256px;
+    box-sizing: border-box;
+  }
 }
