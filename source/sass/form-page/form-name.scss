@@ -2,8 +2,7 @@
   display: flex;
   flex-direction: column;
   font-family: 'PT Sans';
-  border-right: 1px solid #dbdbdb;
-  margin: 24px 0 0 0;
+  margin: 0;
 }
 
 .form-name__title {
@@ -13,6 +12,12 @@
   text-align: center;
   text-transform: uppercase;
   margin: 0 0 20px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .form-name__title {
+    font-size: 21px;
+  }
 }
 
 @media (min-width: $desktop-width) {

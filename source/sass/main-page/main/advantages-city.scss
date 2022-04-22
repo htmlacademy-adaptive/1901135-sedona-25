@@ -1,7 +1,14 @@
+.advantages-city__description {
+  padding: 70px 0 35px;
+}
 
 @media (min-width: $tablet-width) {
   .advantages-city {
     grid-column: 1/4;
+  }
+
+  .advantages-city__description {
+    padding: 0;
   }
 
   .advantages-city__container {

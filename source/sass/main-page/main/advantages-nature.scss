@@ -1,3 +1,7 @@
+.advantages-nature__description {
+  padding: 39px 0 35px;
+}
+
 @media (min-width: $tablet-width) {
   .advantages-nature {
     display: grid;
@@ -7,6 +11,7 @@
   }
 
   .advantages-nature__description {
+    padding: 0;
     grid-column: 2/3;
     grid-row: 1/1;
   }

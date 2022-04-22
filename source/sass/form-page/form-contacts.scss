@@ -3,7 +3,7 @@
   flex-direction: column;
   font-family: 'PT Sans';
   border: none;
-  margin: 24px 0 0 0;
+  margin: 0;
 }
 
 .form-contacts__title {
@@ -13,5 +13,16 @@
   text-align: center;
   text-transform: uppercase;
   margin: 0 0 20px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .form-contacts__title {
+    font-size: 21px;
+    margin-left: -40px;
+  }
+
+  .form-contacts  {
+    padding-left: 43px;
+  }
 }
 

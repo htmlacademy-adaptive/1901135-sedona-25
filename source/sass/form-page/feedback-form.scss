@@ -47,12 +47,9 @@
     grid-template-columns: repeat(2,1fr);
   }
 
-  .form-name {
+  .feedback-form__name {
     padding-right: 43px;
-  }
-
-  .form-contacts {
-    padding-left: 44px;
+    border-right: 1px solid #dbdbdb;
   }
 
   .feedback-form__estimation {

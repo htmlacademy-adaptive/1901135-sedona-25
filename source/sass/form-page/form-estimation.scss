@@ -69,6 +69,11 @@
     display: grid;
     grid-template-columns: repeat(2,1fr);
   }
+
+  .form-estimation__title {
+    margin: 0 0 45px 0;
+    font-size: 21px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -77,10 +82,5 @@
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 73px;
-  }
-
-  .form-estimation__title {
-    margin: 0 0 45px 0;
-    font-size: 21px;
   }
 }

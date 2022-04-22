@@ -30,7 +30,7 @@
   text-transform: uppercase;
 
   &:hover {
-    color: #81b3d2;
+    background-color: #669ec0;
   }
 
   &:active {
@@ -65,6 +65,15 @@
     font-size: 14px;
     line-height: 21px;
     padding: 18px 0 17px;
+
+    &:hover {
+      color: #81b3d2;
+      background-color: #ffffff;
+    }
+
+    &:active {
+      color: #00000030;
+    }
   }
 
   .navigation-menu__link--current {

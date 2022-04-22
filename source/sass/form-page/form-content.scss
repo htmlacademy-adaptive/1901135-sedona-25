@@ -1,0 +1,9 @@
+.form-content__header {
+  margin-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-content__header {
+    margin-bottom: 102px;
+  }
+}
