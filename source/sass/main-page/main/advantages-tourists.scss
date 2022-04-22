@@ -8,6 +8,10 @@
   text-align: center;
 }
 
+.advantages-tourists__container {
+  max-width: 290px;
+}
+
 .advantages-tourists__title {
   font-size: 18px;
   font-weight: 700;
@@ -30,3 +34,8 @@
   text-transform: uppercase;
 }
 
+@media (min-width: $tablet-width) {
+  .advantages-tourists {
+    padding: 0;
+  }
+}

@@ -8,6 +8,10 @@
   text-align: center;
 }
 
+.advantages-road__container {
+  max-width: 292px;
+}
+
 .advantages-road::after {
   content: '';
   display: block;
@@ -41,5 +45,13 @@
 @media (min-width: $tablet-width) {
   .advantages-road::after {
     display: none;
+  }
+
+  .advantages-road {
+    padding: 0;
+  }
+
+  .advantages-road__subtitle  {
+    margin: 17px 0 0 0;
   }
 }

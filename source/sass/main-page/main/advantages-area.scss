@@ -8,6 +8,10 @@
   text-align: center;
 }
 
+.advantages-area__container {
+  max-width: 315px;
+}
+
 .advantages-area::after {
   content: '';
   display: block;
@@ -42,4 +46,13 @@
   .advantages-area::after {
     display: none;
   }
+
+  .advantages-area {
+    padding: 0;
+  }
+
+  .advantages-area__subtitle {
+    margin: 17px 0 0 0;
+  }
 }
+
