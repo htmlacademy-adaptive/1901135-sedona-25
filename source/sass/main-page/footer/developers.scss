@@ -7,6 +7,22 @@
   text-decoration: none;
 }
 
+.developers__link:hover .developers__title {
+  color: #81b3d2;
+}
+
+.developers__link:hover .developers__logo {
+  fill: #81b3d2;
+}
+
+.developers__link:active .developers__title {
+  color: #B3B3B3;
+}
+
+.developers__link:active .developers__logo {
+  fill: #B3B3B3;
+}
+
 .developers__title {
   margin: 0 10px 0 0;
   font-size: 14px;

@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  position: absolute;
   width: 56px;
   height: 56px;
   background-color: inherit;
@@ -29,6 +29,14 @@
     bottom: 17px;
     left: 17px;
     transition: all 0.3s ease;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

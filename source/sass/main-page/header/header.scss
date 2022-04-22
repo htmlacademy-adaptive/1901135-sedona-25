@@ -3,6 +3,11 @@
   position: absolute;
   left: 50%;
   margin-left: -51px;
+  z-index: 2;
+}
+
+.header__navigation {
+  min-height: 56px;
 }
 
 

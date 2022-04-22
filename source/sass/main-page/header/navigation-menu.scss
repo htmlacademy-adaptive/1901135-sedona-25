@@ -28,6 +28,14 @@
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+
+  &:hover {
+    color: #81b3d2;
+  }
+
+  &:active {
+    color: #00000030;
+  }
 }
 
 
@@ -54,6 +62,9 @@
 
   .navigation-menu__link {
     color: #000000;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 18px 0 17px;
   }
 
   .navigation-menu__link--current {
