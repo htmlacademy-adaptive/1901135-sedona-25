@@ -19,3 +19,9 @@
   resize: none;
 }
 
+@media (min-width: $desktop-width) {
+  .form-emotions__title {
+    margin: 0 0 59px 0;
+    font-size: 21px;
+  }
+}

@@ -14,4 +14,17 @@
   padding: 16px 20px;
   border: none;
   box-sizing: border-box;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: #ffffff4d;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 }

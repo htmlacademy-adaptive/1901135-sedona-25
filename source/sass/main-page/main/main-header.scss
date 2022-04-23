@@ -1,5 +1,7 @@
 .main-header {
+  position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 90px 0 85px;
@@ -7,6 +9,13 @@
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
+}
+
+.main-header__triangle {
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
 @media (min-width: $tablet-width) {

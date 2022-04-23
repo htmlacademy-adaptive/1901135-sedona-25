@@ -3,9 +3,21 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 26px 0 24px;
+  padding: 26px 0 0;
   background-color: #eeeeee;
   text-align: center;
+}
+
+.advantages-area__container {
+  max-width: 315px;
+}
+
+.advantages-area::after {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 88.75%;
+  background-color: #d6d6d6;
 }
 
 .advantages-area__title {
@@ -26,7 +38,25 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
-  margin: 17px 0 0 0;
+  margin: 17px 0 24px 0;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages-area::after {
+    display: none;
+  }
+
+  .advantages-area {
+    padding: 0;
+  }
+
+  .advantages-area__title {
+    font-size: 21px;
+  }
+
+  .advantages-area__subtitle {
+    margin: 17px 0 0 0;
+  }
 }
 

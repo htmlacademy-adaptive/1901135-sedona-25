@@ -1,6 +1,6 @@
 .advantages-city-list {
   list-style: none;
-  padding: 25px 0 52px;
+  padding: 25px 0 22px;
   margin: 0;
 }
 
@@ -42,25 +42,45 @@
 @media (min-width: $tablet-width) {
   .advantages-city__list-container {
     grid-column: -1/1;
+    padding: 0;
   }
 
   .advantages-city-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding: 60px 0;
   }
 
   .advantages-city-list__item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 35px;
+    padding: 0;
+    flex-basis: 30%;
+  }
+
+  .advantages-city-list__image {
+    width: 75px;
+    height: 75px;
   }
 
   .advantages-city-list__title {
     text-align: center;
+    margin: 26px 0 26px 0;
   }
 
   .advantages-city-list__subtitle {
     text-align: center;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages-city-list__item {
+    flex-basis: 25%;
+  }
+
+  .advantages-city-list__title  {
+    font-size: 21px;
   }
 }

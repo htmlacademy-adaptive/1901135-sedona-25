@@ -1,6 +1,25 @@
 .form-header {
   font-family: 'PT Sans';
-  padding: 33px 0 28px;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.form-header__container {
+  position: relative;
+  min-width: 284px;
+  padding: 0 20px;
+  box-sizing: border-box;
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: '';
+    height: 1px;
+    width: 120%;
+    background-color: #e5e5e5;
+    top: 160px;
+    left: -10%;
+  }
 }
 
 .form-header__title {
@@ -9,6 +28,7 @@
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
+  margin: 0 0 35px 0;
 }
 
 .form-header__subtitle {
@@ -17,5 +37,23 @@
   line-height: 21px;
   text-transform: uppercase;
   text-align: center;
+  margin: 0;
 }
 
+@media (min-width: $tablet-width) {
+  .form-header__container {
+    padding: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .form-header__title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}

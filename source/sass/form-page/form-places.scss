@@ -5,6 +5,7 @@
   border: none;
   margin: 24px 0 0 0;
 }
+
 .form-places__title {
   font-size: 18px;
   font-weight: 700;
@@ -32,6 +33,14 @@
   height: 46px;
   border-radius: 4px;
   margin: 0 16px 0 0;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    background-color: #d5d5d5;
+  }
 }
 
 .form-places__checkbox-checked {
@@ -46,7 +55,6 @@
   border-radius: 50%;
   margin: -8px 0 0 -8px;
 }
-
 
 .form-places__control-input:checked + .form-places__checkbox-style .form-places__checkbox-checked {
   display: block;
@@ -64,5 +72,11 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 87px;
+  }
+
+  .form-places__title {
+    margin: 0 0 59px 0;
+    font-size: 21px;
   }
 }

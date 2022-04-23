@@ -15,6 +15,11 @@
   transition: all ease 0.3s;
 }
 
+.navigation__list--nojs {
+  position: static;
+  transform: translateY(0);
+}
+
 .navigation__list--activ {
   transform: translateY(0);
 }

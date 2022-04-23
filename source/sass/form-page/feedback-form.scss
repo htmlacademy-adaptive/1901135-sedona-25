@@ -37,18 +37,19 @@
   padding: 0;
 }
 
+.feedback-form__name {
+  border: none;
+}
+
 @media (min-width: $tablet-width) {
   .feedback-form {
     display: grid;
     grid-template-columns: repeat(2,1fr);
   }
 
-  .form-name {
+  .feedback-form__name {
     padding-right: 43px;
-  }
-
-  .form-contacts {
-    padding-left: 44px;
+    border-right: 1px solid #dbdbdb;
   }
 
   .feedback-form__estimation {
@@ -66,4 +67,8 @@
   .feedback-form__button {
     margin-left: 0;
   }
+}
+
+@media (min-width: $desktop-width) {
+
 }

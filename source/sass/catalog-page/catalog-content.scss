@@ -1,0 +1,25 @@
+.catalog-content__header {
+  position: relative;
+  padding: 0 0 58px 0;
+  max-width: 458px;
+  margin: 0 auto;
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: '';
+    height: 1px;
+    width: 120%;
+    background-color: #e5e5e5;
+    top: 160px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-content__header {
+    padding-bottom: 87px;
+    &::before {
+      display: none;
+    }
+  }
+}

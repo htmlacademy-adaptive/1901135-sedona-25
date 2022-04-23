@@ -1,11 +1,5 @@
 .catalog-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-family: 'PT Sans';
-  padding: 33px 0 40px;
-  min-height: 188px;
 }
 
 .catalog-header__title {
@@ -14,6 +8,7 @@
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
+  margin: 0 0 35px 0;
 }
 
 .catalog-header__subtitle {
@@ -22,14 +17,11 @@
   line-height: 21px;
   text-transform: uppercase;
   text-align: center;
+  margin: 0;
 }
 
 
 @media (min-width: $tablet-width) {
-  .catalog-header {
-    min-height: 247px;
-  }
-
   .catalog-header__title {
     font-size: 30px;
   }

@@ -1,0 +1,10 @@
+.main-catalog__header {
+  position: relative;
+  margin-bottom: 33px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-catalog__header {
+    margin-bottom: 65px;
+  }
+}

@@ -2,7 +2,15 @@
   color: #ffffff;
   background-color: #81b3d2;
   text-align: center;
-  padding: 70px 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.description__container {
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .description__title {
@@ -21,9 +29,30 @@
 
 .description__subtitle {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 21px;
   margin: 17px 0 0 0;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .description {
+    padding: 0;
+  }
+
+  .description__container {
+    max-width: 75%;
+    padding: 0;
+  }
+
+  .description__title {
+    font-size: 21px;
+    margin-bottom: 17px;
+  }
+
+  .description__subtitle {
+    font-weight: 400;
+    margin-top: 30px;
+  }
 }
 
