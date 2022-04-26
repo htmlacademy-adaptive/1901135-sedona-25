@@ -3,6 +3,10 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicon/icon.png" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicon/152.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:regular,italic,700,700italic" rel="stylesheet" />
@@ -14,30 +18,33 @@
   <div class="wrapper">
     <header class="header">
       <a class="header__logo logo" href="index.html">
-        <img class="logo__image" src="./img/main-page/logotype-mobile.svg" alt="Логотип." width="102" height="84">
+        <picture>
+          <source media="(min-width:768px)" srcset="./img/main-page/desktop-logo.svg">
+          <img class="logo__image" src="./img/main-page/logotype-mobile.svg" alt="Логотип." width="185" height="96">
+        </picture>
       </a>
       <nav class="header__navigation navigation">
-          <button class="navigation__burger-button burger-button" type="button">
-            <span class="burger-button__line">
-              <span class="visually-hidden">Кнопка меню.</span>
-            </span>
-          </button>
-          <ul class="navigation__list navigation-menu">
-            <li class="navigation-menu__item">
-              <a class="navigation-menu__link navigation-menu__link--current" href="index.html">Главная</a>
-            </li>
-            <li class="navigation-menu__item">
-              <a class="navigation-menu__link" href="catalog.html">Фото и видео</a>
-            </li>
-            <li class="navigation-menu__item">
-            </li>
-            <li class="navigation-menu__item">
-              <a class="navigation-menu__link" href="form.html">Форма отзыва</a>
-            </li>
-            <li class="navigation-menu__item">
-              <a class="navigation-menu__link" href="#">Html academy</a>
-            </li>
-          </ul>
+        <button class="navigation__burger-button burger-button" type="button">
+          <span class="burger-button__line">
+            <span class="visually-hidden">Кнопка меню.</span>
+          </span>
+        </button>
+        <ul class="navigation__list navigation-menu">
+          <li class="navigation-menu__item">
+            <a class="navigation-menu__link navigation-menu__link--current" href="index.html">Главная</a>
+          </li>
+          <li class="navigation-menu__item">
+            <a class="navigation-menu__link" href="catalog.html">Фото и видео</a>
+          </li>
+          <li class="navigation-menu__item">
+          </li>
+          <li class="navigation-menu__item">
+            <a class="navigation-menu__link" href="form.html">Форма отзыва</a>
+          </li>
+          <li class="navigation-menu__item">
+            <a class="navigation-menu__link" href="#">Html academy</a>
+          </li>
+        </ul>
       </nav>
     </header>
 
@@ -45,10 +52,11 @@
       <div class="main-form__header form-top">
         <h1 class="visually-hidden">Sedona</h1>
         <img class="form-top__title" src="./img/catalog-page/catalog-title.svg">
-        <svg class="main-header__triangle" width="320" height="57" viewBox="0 0 320 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M-190.171 23.7L-440 0V57H-190.171H160.55L-190.171 0V23.7Z" fill="white"/>
-          <path d="M511.271 23.7V0L160.55 57H511.271H761V0L511.271 23.7Z" fill="white"/>
-          </svg>
+        <svg class="main-header__triangle" width="320" height="57" viewBox="0 0 320 57" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M-190.171 23.7L-440 0V57H-190.171H160.55L-190.171 0V23.7Z" fill="white" />
+          <path d="M511.271 23.7V0L160.55 57H511.271H761V0L511.271 23.7Z" fill="white" />
+        </svg>
       </div>
       <section class="main-form__content form-content">
         <div class="form-content__header form-header">
@@ -60,88 +68,92 @@
         </div>
         <div class="container">
           <form class="form-content__feedback-form feedback-form" action="https://echo.htmlacademy.ru" method="post">
-              <fieldset class="feedback-form__name form-name">
-                <legend class="form-name__title">Представьтесь:</legend>
-                <label class="form-name__label-name form-label" for="feedback-name">Имя*:</label>
-                <input class="form-name__form-input form-input" type="text" id="feedback-name" name="feedback-name" placeholder="Петр"
-                  required>
-                <label class="form-name__label-name form-label" for="feedback-surname">Фамилия*:</label>
-                <input class="form-name__form-input form-input" type="text" id="feedback-surname" name="feedback-surname"
-                  placeholder="Иванов" required>
-                <label class="form-name__label-name form-label" for="feedback-patronymic">Отчество:</label>
-                <input class="form-name__form-input form-input" type="text" id="feedback-patronymic" name="feedback-patronymic"
-                  placeholder="Петрович">
-              </fieldset>
-              <fieldset class="feedback-form__contacts form-contacts">
-                <legend class="form-contacts__title">Контактная информация:</legend>
-                <label class="form-contacts__label-phone form-label" for="feedback-phone">Контактный телефон*:</label>
-                <input class="form-contacts__form-input form-input" type="text" id="feedback-phone" name="feedback-phone"
-                  placeholder="Введите телефон" required>
-                <label class="form-contacts__label-email form-label" for="feedback-email">Электронная почта*:</label>
-                <input class="form-contacts__form-input form-input" type="text" id="feedback-email" name="feedback-email"
-                  placeholder="Введите e-mail" required>
-              </fieldset>
-              <fieldset class="feedback-form__estimation form-estimation">
-                <legend class="form-estimation__title">Ваше общее впечатление:</legend>
-                <label class="form-estimation__control-radio">
-                  <input class="form-estimation__control-input visually-hidden" type="radio" name="estimation" value="positive" checked>
-                  <span class="form-estimation__radio-style">
-                    <span class="form-estimation__radio-checked"></span>
-                  </span>
-                  Скорее положительное
-                </label>
-                <label class="form-estimation__control-radio">
-                  <input class="form-estimation__control-input visually-hidden" type="radio" name="estimation" value="negative">
-                  <span class="form-estimation__radio-style">
-                    <span class="form-estimation__radio-checked"></span>
-                  </span>
-                  Скорее отрицательное
-                </label>
-                <label class="form-estimation__control-radio">
-                  <input class="form-estimation__control-input visually-hidden" type="radio" name="estimation" value="difficult to answer">
-                  <span class="form-estimation__radio-style">
-                    <span class="form-estimation__radio-checked"></span>
-                  </span>
-                  Затрудняюсь ответить
-                </label>
-              </fieldset>
-              <fieldset class="feedback-form__places form-places">
-                <legend class="form-places__title">Посещенные достопримечательности:</legend>
-                <label class="form-places__control-checkbox">
-                  <input class="form-places__control-input visually-hidden" type="checkbox" value="devil's bridge" checked>
-                  <span class="form-places__checkbox-style">
-                    <span class="form-places__checkbox-checked"></span>
-                  </span>
-                  Мост Дьявола
-                </label>
-                <label class="form-places__control-checkbox">
-                  <input class="form-places__control-input visually-hidden" type="checkbox" value="mount bell" checked>
-                  <span class="form-places__checkbox-style">
-                    <span class="form-places__checkbox-checked"></span>
-                  </span>
-                  Гора-Колокол
-                </label>
-                <label class="form-places__control-checkbox">
-                  <input class="form-places__control-input visually-hidden" type="checkbox" value="slide park" checked>
-                  <span class="form-places__checkbox-style">
-                    <span class="form-places__checkbox-checked"></span>
-                  </span>
-                  Слайд-парк
-                </label>
-                <label class="form-places__control-checkbox">
-                  <input class="form-places__control-input visually-hidden" type="checkbox" value="red rocks">
-                  <span class="form-places__checkbox-style">
-                    <span class="form-places__checkbox-checked"></span>
-                  </span>
-                  Красные скалы
-                </label>
-              </fieldset>
-              <fieldset class="feedback-form__emotions form-emotions">
-                <legend class="form-emotions__title">Опишите свои эмощии:</legend>
-                <textarea class="form-emotions__text form-input" id="emotions-text" name="emotions-text"
-                  placeholder="Опишите подробно все свои восторги" rows="6"></textarea>
-              </fieldset>
-              <button class="feedback-form__button main-button" type="submit">Отправить отзыв</button>
+            <fieldset class="feedback-form__name form-name">
+              <legend class="form-name__title">Представьтесь:</legend>
+              <label class="form-name__label-name form-label" for="feedback-name">Имя*:</label>
+              <input class="form-name__form-input form-input" type="text" id="feedback-name" name="feedback-name"
+                placeholder="Петр" required>
+              <label class="form-name__label-name form-label" for="feedback-surname">Фамилия*:</label>
+              <input class="form-name__form-input form-input" type="text" id="feedback-surname" name="feedback-surname"
+                placeholder="Иванов" required>
+              <label class="form-name__label-name form-label" for="feedback-patronymic">Отчество:</label>
+              <input class="form-name__form-input form-input" type="text" id="feedback-patronymic"
+                name="feedback-patronymic" placeholder="Петрович">
+            </fieldset>
+            <fieldset class="feedback-form__contacts form-contacts">
+              <legend class="form-contacts__title">Контактная информация:</legend>
+              <label class="form-contacts__label-phone form-label" for="feedback-phone">Контактный телефон*:</label>
+              <input class="form-contacts__form-input form-input" type="text" id="feedback-phone" name="feedback-phone"
+                placeholder="Введите телефон" required>
+              <label class="form-contacts__label-email form-label" for="feedback-email">Электронная почта*:</label>
+              <input class="form-contacts__form-input form-input" type="text" id="feedback-email" name="feedback-email"
+                placeholder="Введите e-mail" required>
+            </fieldset>
+            <fieldset class="feedback-form__estimation form-estimation">
+              <legend class="form-estimation__title">Ваше общее впечатление:</legend>
+              <label class="form-estimation__control-radio">
+                <input class="form-estimation__control-input visually-hidden" type="radio" name="estimation"
+                  value="positive" checked>
+                <span class="form-estimation__radio-style">
+                  <span class="form-estimation__radio-checked"></span>
+                </span>
+                Скорее положительное
+              </label>
+              <label class="form-estimation__control-radio">
+                <input class="form-estimation__control-input visually-hidden" type="radio" name="estimation"
+                  value="negative">
+                <span class="form-estimation__radio-style">
+                  <span class="form-estimation__radio-checked"></span>
+                </span>
+                Скорее отрицательное
+              </label>
+              <label class="form-estimation__control-radio">
+                <input class="form-estimation__control-input visually-hidden" type="radio" name="estimation"
+                  value="difficult to answer">
+                <span class="form-estimation__radio-style">
+                  <span class="form-estimation__radio-checked"></span>
+                </span>
+                Затрудняюсь ответить
+              </label>
+            </fieldset>
+            <fieldset class="feedback-form__places form-places">
+              <legend class="form-places__title">Посещенные достопримечательности:</legend>
+              <label class="form-places__control-checkbox">
+                <input class="form-places__control-input visually-hidden" type="checkbox" value="devil's bridge"
+                  checked>
+                <span class="form-places__checkbox-style">
+                  <span class="form-places__checkbox-checked"></span>
+                </span>
+                Мост Дьявола
+              </label>
+              <label class="form-places__control-checkbox">
+                <input class="form-places__control-input visually-hidden" type="checkbox" value="mount bell" checked>
+                <span class="form-places__checkbox-style">
+                  <span class="form-places__checkbox-checked"></span>
+                </span>
+                Гора-Колокол
+              </label>
+              <label class="form-places__control-checkbox">
+                <input class="form-places__control-input visually-hidden" type="checkbox" value="slide park" checked>
+                <span class="form-places__checkbox-style">
+                  <span class="form-places__checkbox-checked"></span>
+                </span>
+                Слайд-парк
+              </label>
+              <label class="form-places__control-checkbox">
+                <input class="form-places__control-input visually-hidden" type="checkbox" value="red rocks">
+                <span class="form-places__checkbox-style">
+                  <span class="form-places__checkbox-checked"></span>
+                </span>
+                Красные скалы
+              </label>
+            </fieldset>
+            <fieldset class="feedback-form__emotions form-emotions">
+              <legend class="form-emotions__title">Опишите свои эмощии:</legend>
+              <textarea class="form-emotions__text form-input" id="emotions-text" name="emotions-text"
+                placeholder="Опишите подробно все свои восторги" rows="6"></textarea>
+            </fieldset>
+            <button class="feedback-form__button main-button" type="submit">Отправить отзыв</button>
           </form>
         </div>
       </section>
@@ -183,8 +195,9 @@
         <a class="developers__link" href="#">
           <p class="developers__title">Разработано</p>
           <svg class="developers__logo" width="27" height="35" viewBox="0 0 27 35" xmlns="http://www.w3.org/2000/svg">
-            <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"/>
-            </svg>
+            <path
+              d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" />
+          </svg>
         </a>
       </div>
     </footer>

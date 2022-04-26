@@ -8,3 +8,24 @@
   background-position: bottom;
   background-size: cover;
 }
+
+@media (min-width: $tablet-width) {
+  .catalog-top {
+    background-image: url('../../../img/main-page/header-back-desktop.jpg');
+    padding: 95px 0 117px;
+  }
+
+  .catalog-top__title {
+    width: 456px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-top {
+    padding: 101px 0 120px;
+  }
+
+  .catalog-top__title {
+    width: 459px;
+  }
+}

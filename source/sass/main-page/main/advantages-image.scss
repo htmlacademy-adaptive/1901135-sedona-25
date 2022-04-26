@@ -1,10 +1,12 @@
 .advantages-image {
   max-width: 100%;
   overflow: hidden;
+  object-position: center;
 
   img {
     min-width: 100%;
     object-fit: cover;
+    object-position: center;
     display: block;
   }
 }

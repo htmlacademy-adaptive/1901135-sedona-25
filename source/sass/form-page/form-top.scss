@@ -9,3 +9,24 @@
   background-position: bottom;
   background-size: cover;
 }
+
+@media (min-width: $tablet-width) {
+  .form-top {
+    background-image: url('../../../img/main-page/header-back-desktop.jpg');
+    padding: 95px 0 117px;
+  }
+
+  .form-top__title {
+    width: 456px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-top {
+    padding: 101px 0 120px;
+  }
+
+  .form-top__title {
+    width: 459px;
+  }
+}

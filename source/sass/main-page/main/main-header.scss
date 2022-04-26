@@ -19,7 +19,15 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main-header__title {
+    width: 460px;
+    height: 350px;
+  }
+}
+
+@media (min-resolution: 2dppx) {
   .main-header {
-    background-position: center;
+    background-image: url('../../../img/main-page/header-back-desktop.jpg');
+    background-position: top;
   }
 }
