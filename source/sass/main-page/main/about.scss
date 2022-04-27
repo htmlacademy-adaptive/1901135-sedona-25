@@ -3,7 +3,7 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
-  margin: 0 0 35px 0;
+  margin: 0 0 30px 0;
   text-align: center;
   text-transform: uppercase;
 }
@@ -39,6 +39,8 @@
   }
 
   .about__header {
+    max-width: 540px;
+    margin: 0 auto;
     margin-bottom: 56px;
   }
 }
