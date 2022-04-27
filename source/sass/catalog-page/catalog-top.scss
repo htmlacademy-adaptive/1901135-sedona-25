@@ -3,10 +3,17 @@
   justify-content: center;
   align-items: center;
   padding: 90px 0 85px;
+  background-color: #afd1e7;
   background-image: url('../../img/main-page/header-back-mobile.jpg');
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
+}
+
+@media (min-resolution: 2dppx) {
+  .catalog-top {
+    background-image: url('../../../img/main-page/header-back-mobile@2x.jpg');
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -17,6 +24,12 @@
 
   .catalog-top__title {
     width: 456px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .catalog-top {
+      background-image: url('../../../img/main-page/header-back-desktop@2x.jpg');
+    }
   }
 }
 

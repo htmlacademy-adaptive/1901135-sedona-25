@@ -10,6 +10,12 @@
   background-size: cover;
 }
 
+@media (min-resolution: 2dppx) {
+  .form-top {
+    background-image: url('../../../img/main-page/header-back-mobile@2x.jpg');
+  }
+}
+
 @media (min-width: $tablet-width) {
   .form-top {
     background-image: url('../../../img/main-page/header-back-desktop.jpg');
@@ -18,6 +24,10 @@
 
   .form-top__title {
     width: 456px;
+  }
+
+  .form-top {
+    background-image: url('../../../img/main-page/header-back-desktop@2x.jpg');
   }
 }
 
