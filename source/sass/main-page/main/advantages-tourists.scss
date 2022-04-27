@@ -1,15 +1,12 @@
 .advantages-tourists {
-  padding: 24px 0 26px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  padding: 24px 0 0;
   background-color: #eeeeee;
   text-align: center;
 }
 
 .advantages-tourists__container {
-  max-width: 290px;
+  max-width: 315px;
+  margin: 0 auto;
 }
 
 .advantages-tourists__title {
@@ -30,16 +27,34 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
-  margin: 17px 0 0 0;
+  margin: 0;
   text-transform: uppercase;
 }
 
 @media (min-width: $tablet-width) {
   .advantages-tourists {
-    padding: 0;
+    padding-top: 42px;
+  }
+
+  .advantages-tourists__number {
+    display: block;
+    margin-bottom: 25px;
   }
 
   .advantages-tourists__title {
     font-size: 21px;
+    max-width: 100px;
+    margin: 0 auto 11px;
+  }
+
+  .advantages-tourists__subtitle {
+    margin: 0 auto;
+    max-width: 180px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages-tourists__subtitle {
+    max-width: 290px;
   }
 }

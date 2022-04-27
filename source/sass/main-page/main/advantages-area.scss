@@ -1,8 +1,4 @@
 .advantages-area {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   padding: 26px 0 0;
   background-color: #eeeeee;
   text-align: center;
@@ -10,6 +6,7 @@
 
 .advantages-area__container {
   max-width: 315px;
+  margin: 0 auto;
 }
 
 .advantages-area::after {
@@ -46,17 +43,28 @@
   .advantages-area::after {
     display: none;
   }
-
   .advantages-area {
-    padding: 0;
+    padding-top: 42px;
   }
 
   .advantages-area__title {
     font-size: 21px;
+    max-width: 140px;
+    margin: 0 auto 10px;
+  }
+
+  .advantages-area__number {
+    display: block;
+    margin-bottom: 25px;
   }
 
   .advantages-area__subtitle {
-    margin: 17px 0 0 0;
+    margin: 0;
   }
 }
 
+@media (min-width: $desktop-width) {
+  .advantages-area__container {
+    padding: 0;
+  }
+}

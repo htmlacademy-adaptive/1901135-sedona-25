@@ -1,4 +1,7 @@
-
+.catalog-video {
+  max-width: 800px;
+  margin: 0 auto;
+}
 .catalog-video__header {
   max-width: 445px;
   margin: 0 auto;
@@ -20,6 +23,11 @@
   text-align: center;
 }
 
+.catalog-video__video {
+  text-align: center;
+
+}
+
 @media (min-width: $tablet-width) {
   .catalog-video__title {
     margin: 0 0 35px 0;
@@ -27,6 +35,14 @@
   }
 
   .catalog-video {
-    padding-top: 59px;
+    padding-top: 58px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-video {
+    padding-top: 62px;
+    margin-bottom: 92px;
   }
 }

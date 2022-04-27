@@ -15,11 +15,26 @@
   }
 }
 
+.catalog-content__container {
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
 @media (min-width: $tablet-width) {
   .catalog-content__header {
     padding-bottom: 87px;
     &::before {
       display: none;
     }
+  }
+
+  .catalog-content__container {
+    padding: 0 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-content__container {
+    padding: 0;
   }
 }

@@ -6,6 +6,10 @@
   margin: 0 0 15px 0;
 }
 
+.photos-image__description {
+  padding-top: 15px;
+}
+
 .photos-image__title {
   font-size: 14px;
   font-weight: 700;
@@ -88,6 +92,7 @@
     z-index: 10;
     color: #ffffff;
     background-color: rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
   }
 
   .photos-image__likes::before {
