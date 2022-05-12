@@ -8,7 +8,7 @@
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
-  margin: 0 0 35px 0;
+  margin: 0 0 25px 0;
 }
 
 .catalog-header__subtitle {
@@ -24,5 +24,6 @@
 @media (min-width: $tablet-width) {
   .catalog-header__title {
     font-size: 30px;
+    margin-bottom: 30px;
   }
 }

@@ -11,6 +11,7 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
+  margin: 0px 0px 25px 0px;
   text-transform: uppercase;
   text-align: center;
 }
@@ -19,6 +20,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
+  margin: 0px 0px 38px 0px;
   text-transform: uppercase;
   text-align: center;
 }
@@ -33,7 +35,9 @@
     margin: 0 0 35px 0;
     font-size: 30px;
   }
-
+  .catalog-video__subtitle {
+    margin-bottom: 90px;
+  }
   .catalog-video {
     padding-top: 58px;
     margin-bottom: 40px;
@@ -44,5 +48,8 @@
   .catalog-video {
     padding-top: 62px;
     margin-bottom: 92px;
+  }
+  .catalog-video__title {
+    margin-bottom: 30px;
   }
 }

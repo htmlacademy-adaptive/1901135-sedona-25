@@ -5,6 +5,11 @@
 
 @media (min-width: $tablet-width) {
   .main-catalog__header {
-    margin-bottom: 65px;
+    margin-bottom: 60px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .main-catalog__header {
+    margin-bottom: 100px;
   }
 }

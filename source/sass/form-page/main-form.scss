@@ -6,4 +6,14 @@
   .main-form__header {
     margin-bottom: 64px;
   }
+  .main-form__content {
+    max-width: 90.37%;
+    margin: 0 auto 70px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-form__header {
+    margin-bottom: 115px;
+  }
 }

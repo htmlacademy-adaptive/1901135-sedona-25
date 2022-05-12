@@ -12,12 +12,10 @@
     "icon subtitle";
 }
 
-.advantages-city-list__item:last-child .advantages-city-list__image {
-  padding-left: 3px;
-}
-
 .advantages-city-list__image {
   grid-area: icon;
+  width: 40px;
+  height: 40px;
 }
 
 .advantages-city-list__title {
@@ -83,11 +81,20 @@
 }
 
 @media (min-width: $desktop-width) {
+  .advantages-city-list {
+    padding: 60px 0 80px;
+  }
+
   .advantages-city-list__item {
     flex-basis: 25%;
   }
 
   .advantages-city-list__title  {
     font-size: 21px;
+  }
+  .advantages-city-list__subtitle {
+    text-align: center;
+    margin: 0;
+    max-width: 100%;
   }
 }

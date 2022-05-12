@@ -1,9 +1,20 @@
 .form-estimation {
+  position: relative;
   display: flex;
   flex-direction: column;
   font-family: 'PT Sans';
   border: none;
-  margin: 24px 0 0 0;
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: '';
+    height: 1px;
+    width: 120%;
+    background-color: #e5e5e5;
+    bottom: -8px;
+    left: -10%;
+  }
 }
 
 .form-estimation__title {
@@ -60,19 +71,47 @@
   background-color: #3333334d;
 }
 
-.form-estimation__control-input:checked + .form-estimation__radio-style .form-estimation__radio-checked {
+.form-estimation__control-input:checked+.form-estimation__radio-style .form-estimation__radio-checked {
   display: block;
 }
 
 @media (min-width: $tablet-width) {
   .form-estimation {
+    width: 88.3%;
+    margin: 0 auto 30px;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
+
+    &::before {
+      position: absolute;
+      display: block;
+      content: '';
+      height: 1px;
+      width: 21.37%;
+      background-color: #e5e5e5;
+      top: -45px;
+      left: -36px;
+    }
+
+    &::after {
+      position: absolute;
+      display: block;
+      content: '';
+      height: 1px;
+      width: 21.37%;
+      background-color: #e5e5e5;
+      top: -45px;
+      right: -36px;
+    }
   }
 
   .form-estimation__title {
-    margin: 0 0 45px 0;
+    margin: 0 0 28px 0;
     font-size: 21px;
+  }
+
+  .form-estimation__control-radio:nth-child(3) {
+    padding-left: 10px;
   }
 }
 
@@ -81,6 +120,21 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 73px;
+    margin-bottom: 60px;
+
+    &::before {
+      top: -60px;
+      left: -50px;
+      width: 33%;
+    }
+    &::after {
+      top: -60px;
+      right: -50px;
+      width: 33%;
+    }
+  }
+
+  .form-estimation__title {
+    margin-bottom: 45px;
   }
 }
