@@ -1,9 +1,20 @@
 .form-contacts {
+  position: relative;
   display: flex;
   flex-direction: column;
   font-family: 'PT Sans';
   border: none;
-  margin: 0;
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: '';
+    height: 1px;
+    width: 120%;
+    background-color: #e5e5e5;
+    bottom: -20px;
+    left: -10%;
+  }
 }
 
 .form-contacts__title {
@@ -15,14 +26,37 @@
   margin: 0 0 20px 0;
 }
 
-@media (min-width: $tablet-width) {
-  .form-contacts__title {
-    font-size: 21px;
-    margin-left: -40px;
-  }
-
-  .form-contacts  {
-    padding-left: 43px;
-  }
+.form-contacts__input-container {
+  display: flex;
 }
 
+.form-contacts__icon {
+  min-width: 58px;
+  height: 58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E6E6E6;
+}
+
+.phone-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.mail-icon {
+  width: 16px;
+  height: 12px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-contacts::before {
+    display: none;
+  }
+  .form-contacts__title {
+    font-size: 21px;
+    width: 100%;
+    margin-bottom: 27px;
+    margin-left: -22px;
+  }
+}

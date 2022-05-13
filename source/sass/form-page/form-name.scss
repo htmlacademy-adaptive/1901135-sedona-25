@@ -1,8 +1,19 @@
 .form-name {
+  position: relative;
   display: flex;
   flex-direction: column;
   font-family: 'PT Sans';
-  margin: 0;
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: '';
+    height: 1px;
+    width: 120%;
+    background-color: #e5e5e5;
+    bottom: -25px;
+    left: -10%;
+  }
 }
 
 .form-name__title {
@@ -15,8 +26,14 @@
 }
 
 @media (min-width: $tablet-width) {
+  .form-name::before {
+    display: none;
+  }
   .form-name__title {
     font-size: 21px;
+    width: 100%;
+    margin-bottom: 27px;
+    margin-left: 20px;
   }
 }
 

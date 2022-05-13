@@ -28,7 +28,7 @@
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
-  margin: 0 0 35px 0;
+  margin: 0 0 25px 0;
 }
 
 .form-header__subtitle {
@@ -52,8 +52,15 @@
   .form-header__title {
     font-size: 30px;
     font-weight: 700;
-    line-height: 26px;
+    line-height: 28px;
+    margin-bottom: 20px;
     text-transform: uppercase;
     text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-header__title {
+    margin-bottom: 30px;
   }
 }

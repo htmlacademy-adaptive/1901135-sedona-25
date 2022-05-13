@@ -45,9 +45,11 @@
 
 @media (min-width: $desktop-width)  {
   .find-hotel {
-    padding: 61px 0 66px;
+    padding: 58px 0 66px;
   }
-
+  .find-hotel__title {
+    margin-bottom: 32px;
+  }
   .find-hotel__subtitle {
     margin: 0 0 46px 0;
   }

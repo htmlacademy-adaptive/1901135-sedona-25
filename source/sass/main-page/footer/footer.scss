@@ -11,6 +11,12 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 28px 45px 33px;
+    padding: 31px 60px 33px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer {
+    padding: 31px 120px 33px;
   }
 }

@@ -29,3 +29,10 @@
 }
 
 
+@media (min-width: 1200px)  {
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}

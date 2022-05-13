@@ -1,6 +1,6 @@
 .catalog-content__header {
   position: relative;
-  padding: 0 0 58px 0;
+  padding: 0 0 45px 0;
   max-width: 458px;
   margin: 0 auto;
 
@@ -10,8 +10,9 @@
     content: '';
     height: 1px;
     width: 120%;
+    right: -10%;
     background-color: #e5e5e5;
-    top: 160px;
+    top: 86.11%;
   }
 }
 
@@ -36,5 +37,8 @@
 @media (min-width: $desktop-width) {
   .catalog-content__container {
     padding: 0;
+  }
+  .catalog-content__header {
+    padding-bottom: 90px;
   }
 }

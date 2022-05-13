@@ -32,7 +32,6 @@
   font-size: 14px;
   font-weight: 700;
   line-height: 21px;
-  margin: 0 0 25px 0;
 
   &::before {
     display: block;
@@ -48,6 +47,9 @@
 }
 
 @media (min-width: $tablet-width) {
+  .photos-image::before {
+    display: none;
+  }
   .photos-image__description {
     display: grid;
     grid-template-columns: 2fr 1fr;
