@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
   border: none;
 }
 
@@ -25,7 +25,7 @@
     &::before {
       position: absolute;
       display: block;
-      content: '';
+      content: "";
       height: 1px;
       width: 21.37%;
       background-color: #e5e5e5;
@@ -36,7 +36,7 @@
     &::after {
       position: absolute;
       display: block;
-      content: '';
+      content: "";
       height: 1px;
       width: 21.37%;
       background-color: #e5e5e5;
@@ -44,17 +44,18 @@
       right: 0;
     }
   }
+
   .form-emotions__title {
     font-size: 21px;
     line-height: 26px;
     margin-bottom: 30px;
   }
+
   .form-emotions__text {
     min-height: 158px;
     max-width: 768px;
     margin: 0 auto;
   }
-  
 }
 
 @media (min-width: $desktop-width) {
@@ -62,10 +63,12 @@
     &::before {
       width: 29.37%;
     }
+
     &::after {
       width: 29.37%;
     }
   }
+
   .form-emotions__title {
     margin: 0 0 30px 0;
   }

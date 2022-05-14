@@ -1,5 +1,5 @@
 .form-header {
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
   max-width: 450px;
   margin: 0 auto;
 }
@@ -13,7 +13,7 @@
   &::before {
     position: absolute;
     display: block;
-    content: '';
+    content: "";
     height: 1px;
     width: 120%;
     background-color: #e5e5e5;

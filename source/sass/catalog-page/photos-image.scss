@@ -1,5 +1,5 @@
 .photos-image {
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
 }
 
 .photos-image__photo {
@@ -35,11 +35,11 @@
 
   &::before {
     display: block;
-    content: '';
+    content: "";
     position: absolute;
     width: 23px;
     height: 21px;
-    background: url('../../img/catalog-page/like-icon.svg') no-repeat center;
+    background: url("../../img/catalog-page/like-icon.svg") no-repeat center;
     background-size: cover;
     left: 0;
     top: -4px;
@@ -50,6 +50,7 @@
   .photos-image::before {
     display: none;
   }
+
   .photos-image__description {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -98,6 +99,6 @@
   }
 
   .photos-image__likes::before {
-    background: url('../../img/catalog-page/like-icon-desctop.svg') no-repeat center;
+    background: url("../../img/catalog-page/like-icon-desctop.svg") no-repeat center;
   }
 }

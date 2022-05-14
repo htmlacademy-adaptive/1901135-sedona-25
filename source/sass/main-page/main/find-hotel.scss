@@ -1,5 +1,5 @@
 .find-hotel {
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
   text-align: center;
   padding: 39px 0 49px;
 }
@@ -28,7 +28,7 @@
   text-transform: uppercase;
 }
 
-@media (min-width: $tablet-width)  {
+@media (min-width: $tablet-width) {
   .find-hotel {
     padding: 56px 0 58px;
   }
@@ -43,14 +43,17 @@
   }
 }
 
-@media (min-width: $desktop-width)  {
+@media (min-width: $desktop-width) {
   .find-hotel {
     padding: 58px 0 66px;
   }
+
   .find-hotel__title {
     margin-bottom: 32px;
   }
+
   .find-hotel__subtitle {
     margin: 0 0 46px 0;
   }
 }
+

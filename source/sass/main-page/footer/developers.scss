@@ -2,7 +2,7 @@
 .developers__link {
   display: flex;
   align-items: center;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
   color: inherit;
   text-decoration: none;
 }
@@ -16,11 +16,11 @@
 }
 
 .developers__link:active .developers__title {
-  color: #B3B3B3;
+  color: #b3b3b3;
 }
 
 .developers__link:active .developers__logo {
-  fill: #B3B3B3;
+  fill: #b3b3b3;
 }
 
 .developers__title {

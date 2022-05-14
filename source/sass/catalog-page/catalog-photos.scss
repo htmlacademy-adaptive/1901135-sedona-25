@@ -18,7 +18,7 @@
 @media (min-width: $tablet-width) {
   .catalog-photos {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2 1fr);
   }
 
   .catalog-photos__image {
@@ -42,7 +42,7 @@
 @media (min-width: $desktop-width) {
   .catalog-photos {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3 1fr);
   }
 
   .catalog-photos__image:first-child {

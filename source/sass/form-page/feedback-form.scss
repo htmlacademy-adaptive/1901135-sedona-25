@@ -1,5 +1,5 @@
 .form-input {
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
@@ -27,12 +27,12 @@
 
 .feedback-form__estimation {
   padding: 0;
-  margin: 0px 0px 30px 0px;
+  margin: 0 0 30px 0;
 }
 
 .feedback-form__places {
   padding: 0;
-  margin: 0px 0px 35px 0px;
+  margin: 0 0 35px 0;
 }
 
 .feedback-form__emotions {
@@ -44,9 +44,11 @@
   border: none;
   margin-bottom: 50px;
 }
+
 .feedback-form__contacts {
   margin-bottom: 45px;
 }
+
 .feedback-form__button {
   max-width: 324px;
 }
@@ -62,7 +64,7 @@
 @media (min-width: $tablet-width) {
   .feedback-form {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2 1fr);
   }
 
   .feedback-form__contacts {
@@ -93,6 +95,7 @@
     margin-left: 0;
     max-width: 384px;
   }
+
   .feedback-form__note {
     font-size: 18px;
     line-height: 21px;
@@ -104,19 +107,25 @@
   .feedback-form__name {
     padding-right: 50px;
   }
+
   .feedback-form__contacts {
     padding-left: 50px;
   }
+
   .feedback-form__estimation {
     margin-bottom: 80px;
   }
+
   .feedback-form__emotions {
     margin-bottom: 45px;
   }
-  .feedback-form__button  {
+
+  .feedback-form__button {
     margin-left: 95px;
   }
+
   .feedback-form__note {
     margin-right: 95px;
   }
 }
+

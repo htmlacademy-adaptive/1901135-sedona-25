@@ -2,12 +2,12 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
 
   &::before {
     position: absolute;
     display: block;
-    content: '';
+    content: "";
     height: 1px;
     width: 120%;
     background-color: #e5e5e5;
@@ -29,6 +29,7 @@
   .form-name::before {
     display: none;
   }
+
   .form-name__title {
     font-size: 21px;
     width: 100%;
