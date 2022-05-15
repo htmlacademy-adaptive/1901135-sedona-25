@@ -10,7 +10,7 @@
 }
 
 .advantages-road::after {
-  content: '';
+  content: "";
   display: block;
   height: 1px;
   width: 88.75%;
@@ -43,9 +43,6 @@
 @media (min-width: $tablet-width) {
   .advantages-road::after {
     display: none;
-  }
-
-  .advantages-road__container {
   }
 
   .advantages-road {

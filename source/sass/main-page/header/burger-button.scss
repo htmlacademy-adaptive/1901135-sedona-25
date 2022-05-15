@@ -10,7 +10,7 @@
   border: none;
 
   &::before {
-    content: '';
+    content: "";
     background-color: #81b3d2;
     position: absolute;
     width: 22px;
@@ -21,7 +21,7 @@
   }
 
   &::after {
-    content: '';
+    content: "";
     background-color: #81b3d2;
     position: absolute;
     width: 22px;
@@ -42,7 +42,7 @@
 
 .burger-button__line {
   display: block;
-  content: '';
+  content: "";
   background-color: #81b3d2;
   width: 22px;
   height: 4px;

@@ -10,7 +10,7 @@
 }
 
 .advantages-area::after {
-  content: '';
+  content: "";
   display: block;
   height: 1px;
   width: 88.75%;
@@ -44,6 +44,7 @@
   .advantages-area::after {
     display: none;
   }
+
   .advantages-area {
     padding-top: 42px;
   }

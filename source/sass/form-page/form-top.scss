@@ -4,30 +4,27 @@
   justify-content: center;
   align-items: center;
   padding: 52px 0 67px;
-  background-image: url('../../img/main-page/header-back-mobile.jpg');
+  background-image: url("../../img/main-page/header-back-mobile.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
+  background-color: #afd1e7;
 }
 
 @media (min-resolution: 2dppx) {
   .form-top {
-    background-image: url('../../../img/main-page/header-back-mobile@2x.jpg');
+    background-image: url("../../../img/main-page/header-back-mobile@2x.jpg");
   }
 }
 
 @media (min-width: $tablet-width) {
   .form-top {
-    background-image: url('../../../img/main-page/header-back-desktop.jpg');
+    background-image: url("../../../img/main-page/header-back-desktop.jpg");
     padding: 95px 0 117px;
   }
 
   .form-top__title {
     width: 456px;
-  }
-
-  .form-top {
-    background-image: url('../../../img/main-page/header-back-desktop@2x.jpg');
   }
 }
 

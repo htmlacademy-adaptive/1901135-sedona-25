@@ -6,7 +6,7 @@
   align-items: center;
   padding: 90px 0 85px;
   background-color: #afd1e7;
-  background-image: url('../../../img/main-page/header-back-mobile.jpg');
+  background-image: url("../../../img/main-page/header-back-mobile.jpg");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -14,7 +14,7 @@
 
 @media (min-resolution: 2dppx) {
   .main-header {
-    background-image: url('../../../img/main-page/header-back-mobile@2x.jpg');
+    background-image: url("../../../img/main-page/header-back-mobile@2x.jpg");
   }
 }
 
@@ -32,13 +32,13 @@
   }
 
   .main-header {
-    background-image: url('../../../img/main-page/header-back-desktop.jpg');
+    background-image: url("../../../img/main-page/header-back-desktop.jpg");
     padding: 77px 0 91px;
   }
 
   @media (min-resolution: 2dppx) {
     .main-header {
-      background-image: url('../../../img/main-page/header-back-desktop@2x.jpg');
+      background-image: url("../../../img/main-page/header-back-desktop@2x.jpg");
       background-position: bottom;
       background-size: cover;
     }

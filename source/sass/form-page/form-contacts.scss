@@ -2,13 +2,13 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
   border: none;
 
   &::before {
     position: absolute;
     display: block;
-    content: '';
+    content: "";
     height: 1px;
     width: 120%;
     background-color: #e5e5e5;
@@ -36,7 +36,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
 }
 
 .phone-icon {
@@ -53,6 +53,7 @@
   .form-contacts::before {
     display: none;
   }
+
   .form-contacts__title {
     font-size: 21px;
     width: 100%;
