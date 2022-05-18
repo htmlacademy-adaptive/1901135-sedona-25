@@ -91,19 +91,13 @@
 
   <div class="wrapper">
     <header class="header">
-      <a class="header__logo logo" href="index.html">
-        <picture>
-          <source media="(min-width:768px)" srcset="./img/main-page/desktop-logo.svg">
-          <img class="logo__image" src="./img/main-page/mobile-logo.svg" alt="Логотип." width="185" height="96">
-        </picture>
-      </a>
       <nav class="header__navigation navigation">
         <button class="navigation__burger-button burger-button" type="button">
           <span class="burger-button__line">
             <span class="visually-hidden">Кнопка меню.</span>
           </span>
         </button>
-        <ul class="navigation__list navigation-menu">
+        <ul class="navigation__list navigation-menu navigation__list--nojs">
           <li class="navigation-menu__item">
             <a class="navigation-menu__link navigation-menu__link--current" href="index.html">Главная</a>
           </li>
@@ -120,12 +114,20 @@
           </li>
         </ul>
       </nav>
+      <div class="header__logo-wrapper header__logo-wrapper--nojs">
+        <a class="header__logo logo" href="index.html">
+          <picture>
+            <source media="(min-width:768px)" srcset="./img/main-page/desktop-logo.svg">
+            <img class="logo__image" src="./img/main-page/mobile-logo.svg" alt="Логотип." width="185" height="96">
+          </picture>
+        </a>
+      </div>
     </header>
 
     <main class="main-form">
       <div class="main-form__header form-top">
         <h1 class="visually-hidden">Sedona</h1>
-        <img class="form-top__title" src="./img/catalog-page/catalog-title.svg">
+        <img class="form-top__title" src="./img/catalog-page/catalog-title.svg" alt="Sedona">
         <svg class="main-header__triangle" width="320" height="57" viewBox="0 0 320 57" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <path d="M-190.171 23.7L-440 0V57H-190.171H160.55L-190.171 0V23.7Z" fill="white" />
@@ -305,7 +307,7 @@
         </ul>
       </div>
       <div class="footer__developers developers">
-        <a class="developers__link" href="#">
+        <a class="developers__link" href="https://htmlacademy.ru/intensive/adaptive">
           <p class="developers__title">Разработано</p>
           <svg class="developers__logo">
             <use xlink:href="#developers-logo"></use>
