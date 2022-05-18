@@ -1,15 +1,27 @@
+.header__navigation {
+  position: relative;
+  min-height: 56px;
+}
+
+.header__logo-wrapper--activ {
+  position: relative;
+  height: 56px;
+  width: 100%;
+}
+
+.header__logo-wrapper--nojs {
+  position: relative;
+  height: 56px;
+  width: 100%;
+}
 
 .header__logo {
   position: absolute;
   left: 50%;
   margin-left: -90px;
   z-index: 2;
+  top: -10px;
 }
-
-.header__navigation {
-  min-height: 56px;
-}
-
 
 @media (min-width: $tablet-width) {
   .header__logo {
