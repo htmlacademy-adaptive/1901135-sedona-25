@@ -56,6 +56,13 @@ export const images = () => {
     .pipe(gulp.dest('build/img'))
 }
 
+// Webp
+
+export const webp = () => {
+  return gulp.src('source/img/**/*.webp')
+    .pipe(gulp.dest('build/img'))
+}
+
 // Styles
 
 export const styles = () => {
@@ -67,6 +74,18 @@ export const styles = () => {
     ]))
     .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
+}
+
+// Copy 
+
+export const copy = () => {
+  gulp.src([
+    'source/manifest.webmanifest',
+    'source/*.ico',
+  ], {
+    base: 'source'
+  })
+  .pipe(gulp.dest('build'))
 }
 
 // Clean
@@ -101,4 +120,4 @@ export default gulp.series(
   styles, server, watcher
 );
 
-export const build = gulp.series(clean,gulp.parallel(html,scripts,svg,sprite,images,styles))
+export const build = gulp.series(clean,gulp.parallel(html,scripts,svg,sprite,images,styles,copy,webp))
