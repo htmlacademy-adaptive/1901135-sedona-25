@@ -2,7 +2,8 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
+  padding: 0 50px 0 0;
 
   &::before {
     position: absolute;
@@ -43,3 +44,4 @@
     margin-bottom: 55px;
   }
 }
+
