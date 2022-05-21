@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   border: none;
 
   &::before {
@@ -60,7 +60,7 @@
   top: 50%;
   left: 50%;
   content: "";
-  background: url("../../img/form-page/tick.svg");
+  background: url("../img/form-page/tick.svg");
   width: 22px;
   height: 16px;
   border-radius: 50%;
@@ -134,9 +134,9 @@
 
   .form-places__container {
     width: 92%;
-    grid-template-columns: repeat(4 1fr);
+    display: flex;
+    justify-content: space-between;
     margin: 0 auto;
-    column-gap: 50px;
   }
 
   .form-places__title {

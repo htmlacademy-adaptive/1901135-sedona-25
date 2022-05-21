@@ -4,21 +4,29 @@
   align-items: center;
   padding: 52px 0 67px;
   background-color: #afd1e7;
-  background-image: url("../../img/main-page/header-back-mobile.jpg");
+  background-image: url("../img/main-page/header-back-mobile.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
 }
 
+
+.catalog-top__triangle {
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
 @media (min-resolution: 2dppx) {
   .catalog-top {
-    background-image: url("../../../img/main-page/header-back-mobile@2x.jpg");
+    background-image: url("../img/main-page/header-back-mobile@2x.jpg");
   }
 }
 
 @media (min-width: $tablet-width) {
   .catalog-top {
-    background-image: url("../../../img/main-page/header-back-desktop.jpg");
+    background-image: url("../img/main-page/header-back-desktop.jpg");
     padding: 95px 0 117px;
   }
 
@@ -28,7 +36,7 @@
 
   @media (min-resolution: 2dppx) {
     .catalog-top {
-      background-image: url("../../../img/main-page/header-back-desktop@2x.jpg");
+      background-image: url("../img/main-page/header-back-desktop@2x.jpg");
     }
   }
 }

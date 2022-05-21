@@ -1,9 +1,14 @@
 .form-input {
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   width: 100%;
   box-sizing: border-box;
+  border: none;
+  background-color: #f2f2f2;
+  padding: 16px;
+  margin: 0 auto 16px auto;
 
   &:hover {
     background-color: #e5e5e5;
@@ -19,3 +24,4 @@
     color: #0000004d;
   }
 }
+
